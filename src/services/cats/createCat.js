@@ -11,10 +11,15 @@ module.exports = function(options) {
   options = Object.assign({}, defaults, options);
 
   return function(hook) {
-    const cat = hook.params.newCat;
-
-    hook.data.cat = {
-      name: cat._name
-      }
+    console.log("hook", hook)
+    // const cat = hook.params.newCat;
+    //
+    // hook.data.cat = {
+    //   name: cat._name,
+    //   age: cat._age,
+    //   breed: cat._breed,
+    //   summary: cat._summary,
+    //   profilephoto: cat._profilephoto
+    // }
   };
 };

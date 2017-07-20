@@ -5,7 +5,7 @@ module.exports = {
     all: [],
     find: [],
     get: [],
-    create: [createCat()],
+    create: [],
     update: [],
     patch: [],
     remove: []

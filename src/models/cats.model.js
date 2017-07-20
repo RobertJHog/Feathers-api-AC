@@ -7,7 +7,7 @@ module.exports = function (app) {
   const cats = sequelizeClient.define('cats', {
     name: {
       type: Sequelize.STRING,
-      allowNull: false,
+      allowNull: true,
       unique: true
     },
     age: {
@@ -27,7 +27,7 @@ module.exports = function (app) {
     },
     profilephoto: {
       type: Sequelize.STRING,
-      allowNull: false,
+      allowNull: true,
       unique: true
     }
   }, {
